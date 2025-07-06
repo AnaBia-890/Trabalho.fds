@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+    <title>Meu Universo em Código</title>
+    
+<style>
+ body {
+    background-color: #c4bedb;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    color: #a80a0a;
+    text-align: center;
+}
+
+p#bio {
+    font-size: 18px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+#hobbyImg {
+    width: 250px;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0c9d0f;
+}
+
+</style>
+
+</head>
+<body>
+
+    <h1>Ana Beatriz de Jesus Leme</h1>
+    <p id="bio">
+        Olá! Sou Ana Beatriz, tenho 22 anos e moro em Itapevi. Tenho interesse especial por temas como Comportamento Humano, Mitologia e Literatura. 
+    </p>
+    <button id="mensagemBotao">Clique para ver uma mensagem!</button>
+    <p id="mensagemTexto"></p>
+    <ul> 
+    <li>Academia</li>
+    <li>Viagem</li>
+    <li>Assistir filmes e séries</li>
+    </ul>
+
+    <img src="img/Noruega.jpg" width="400">
+
+
+    <table>
+        <tr>
+            <th>País</th>
+            <th>Imagem</th>
+        </tr>
+        <tr>
+            <td>Suiça</td>
+            <td><img src="img/Suiça.jpg" alt="Suiça" width="400"></td>
+        </tr>
+        <tr>
+            <td>Estados Unidos</td>
+            <td><img src="img/Estados Unidos.jpg" alt="Estados Unidos" width="400"></td>
+        </tr>
+        <tr>
+            <td>Itália</td>
+            <td><img src="img/Itália.jpg" alt="Itália" width="400"></td>
+        </tr>
+    </table>
+
+    <p>
+<a href="https://www.nationalgeographicbrasil.com" target="_blank">Visite o National Geographic</a>
+
+    </p>
+
+<script>
+        document.getElementById('mensagemBotao').addEventListener('click', function() {
+            document.getElementById('mensagemTexto').textContent = "Bem-vindo ao meu site! Abaixo listei os meus principais Hobbies, os países que eu gostaria de conhecer e um dos meus sites preferidos!";
+        });
+    </script>
+
+</body>
+
+</html>
